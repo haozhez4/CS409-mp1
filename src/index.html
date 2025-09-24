@@ -1,13 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP1</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <nav class="nav-inner">
+        <span class="nav-indicator"></span>
+        <a href="#Home"     class="nav-link">Home</a>
+        <a href="#About"    class="nav-link">About</a>
+        <a href="#Projects" class="nav-link">Projects</a>
+        <a href="#Contact"  class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home / Hero -->
+    <section id="Home" class="stripe hero">
+      <div class="hero-card">
+        <img class="hero-avatar" src="assets/me.jpg" alt="Haozhe Zhuang portrait" />
+        <h1 class="hero-title">Hey, nice to meet you!</h1>
+        <p class="hero-sub">
+          I’m Haozhe Zhuang, a Master’s student in Computer Science at UIUC.
+          Here is my personal website where you can know me better — including my projects,
+          interests, and contacts.
+        </p>
+        <p class="hero-credit">Photo © Haozhe Zhuang</p>
+      </div>
+    </section>
+
+    <section id="About" class="stripe about">
+    <div class="about-wrap">
+        <h2 class="about-title">About Me</h2>
+
+        <div class="about-grid">
+        <!-- Column 1 -->
+        <article class="about-card">
+            <button class="about-icon modal-trigger reveal"
+                    data-img="assets/graduation.jpg"
+                    aria-label="Open image: Academics">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            </button>
+            <h3 class="about-head">Academics</h3>
+            <p>
+            I’m a CS Master’s student at UIUC. I also completed my undergraduate studies at UIUC.
+            Courses I’ve taken include <strong>Data Structures</strong>, <strong>Algorithms</strong>,
+            <strong>Database Systems</strong>, <strong>Data Mining</strong>, <strong>Microeconomics</strong>,
+            <strong>Macroeconomics</strong>, and <strong>Econometric Methods</strong>.
+            </p>
+        </article>
+
+        <!-- Column 2 -->
+        <article class="about-card">
+            <button class="about-icon modal-trigger reveal"
+                    data-img="assets/japan.jpeg"
+                    aria-label="Open image: Languages">
+            <i class="fa-solid fa-earth-asia" aria-hidden="true"></i>
+            </button>
+            <h3 class="about-head">Languages & Culture</h3>
+            <p>
+            My native language is Chinese, and I’m fluent in English. I’m currently learning Japanese.
+            I believe learning a language is a great way to understand a culture. I hope to keep
+            improving my language skills and cultural understanding because experiencing different
+            cultures is fascinating.
+            </p>
+        </article>
+
+        <!-- Column 3 -->
+        <article class="about-card">
+            <button class="about-icon modal-trigger reveal"
+                    data-img="assets/ski.jpg"
+                    aria-label="Open image: Interests">
+            <i class="fa-solid fa-person-snowboarding" aria-hidden="true"></i>
+            </button>
+            <h3 class="about-head">Interests</h3>
+            <p>
+            I love video games—especially <strong>League of Legends</strong> and <strong>Persona 5</strong>.
+            Recently I’ve been playing <strong>Hollow Knight</strong>. I also enjoy fitness and sports like
+            <strong>skiing</strong>. Traveling to ski in different places is one of my favorite experiences.
+            </p>
+        </article>
+        </div>
+
+        <div class="about-lower">
+        <div class="about-cat">
+            <h3 class="about-head">My Cat</h3>
+            <p class="about-cat-desc">
+            I have a very cute cat! Here are some photos. Use the arrows to browse.
+            </p>
+
+            <div class="carousel" id="catCarousel">
+            <button class="carousel-arrow prev" aria-label="Previous slide">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div class="carousel-viewport">
+                <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="assets/cat1.jpeg" alt="My cat photo 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/cat2.jpeg" alt="My cat photo 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/cat3.jpeg" alt="My cat photo 3">
+                </div>
+                </div>
+            </div>
+
+            <button class="carousel-arrow next" aria-label="Next slide">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+            </div>
+        </div>
+
+        <div class="about-video">
+            <h3 class="about-head">I also love music</h3>
+            <p class="about-video-desc">
+            This is my favorite artist, <strong>Keshi</strong>. I went to his concert this summer.
+            </p>
+
+            <div class="video-frame">
+            <video
+                class="video-player"
+                controls
+                preload="metadata"
+                poster="assets/keshiwithme.JPG">
+                <source src="assets/keshi.mp4" type="video/mp4" />
+                Your browser does not support the HTML5 video tag.
+            </video>
+            </div>
+
+            <p class="about-video-credit">
+            Video © Haozhe Zhuang — for course demo only
+            </p>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <section id="Projects" class="stripe projects">
+    <div class="projects-hero">
+        <div class="projects-hero__content">
+        <h2>Projects</h2>
+        <p>
+            Here is my project part. I will introduce them later and I will also put my resume here.
+        </p>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="Contact" class="stripe contact">
+    <div class="container">
+        <ul class="contact-socials">
+        <li>
+            <a href="https://github.com/haozhez4" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/haozhe-zhuang-296b442ba/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="contact-email">
+            <i class="fa-regular fa-envelope"></i>
+            <span>haozhez4@illinois.edu</span>
+        </li>
+        </ul>
+    </div>
+    </section>
+
+
+
+    <!-- Modal-->
+    <div class="modal" id="aboutModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+        <img class="modal-img"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" 
+             alt="About preview">
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
