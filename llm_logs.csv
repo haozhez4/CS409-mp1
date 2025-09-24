@@ -1,2 +1,10 @@
-example_chatgpt_log_link1
-example_bing_chat_log_link2
+date, tool, assignment, section, what_was_used, how_used, link/location, notes
+2025-09-20,ChatGPT,MP1,Layout,"Grid and Flexbox usage","Applied Grid for cards and Flexbox for centering","N/A",""
+2025-09-22,ChatGPT,MP1,Navbar,"Position indicator and smooth scrolling","Used idea of updating active link on scroll and added smooth scroll behavior","N/A","Improved highlight timing"
+2025-09-20,ChatGPT,MP1,About section,"CSS animations for About icons","Reviewed code suggestions and implemented simplified fade-in + move-up effect","N/A","Kept only keyframes and trigger logic"
+2025-09-20,ChatGPT,MP1,Projects section,"Fixed background image for Projects","Used SCSS snippet to apply background-attachment: fixed and centering","N/A","Adjusted to cover full width/height"
+2025-09-21,ChatGPT,MP1,Contact footer,"Contact section alignment and background color","Learned how to extend background height and center icons with Flexbox","N/A","Also added GitHub, LinkedIn, and email icons"
+2025-09-21,ChatGPT,MP1,Animations,"CSS animations","Added fade-in + move-up and icon pop with IntersectionObserver","N/A",""
+2025-09-22,ChatGPT,MP1,Responsive design,"CSS Grid and Flexbox questions","Asked how to split About section into two rows at 1024x768; implemented media query with grid-template-columns","N/A","Ensured responsiveness at multiple resolutions"
+2025-09-22,ChatGPT,MP1,Responsiveness,"Bug at 1024×768","Fixed with @media query and min-width:0 on cards","N/A",""
+2025-09-23,ChatGPT,MP1,Projects/Contact,"Background bleed issue","Adjusted fixed background and extended Contact section height","N/A",""
